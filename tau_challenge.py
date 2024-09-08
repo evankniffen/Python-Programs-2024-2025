@@ -10,8 +10,12 @@
 from math import *
 # allowing for user inputs
 digs = int(input("Please enter the number of digits of precision for tau: "))
-roundTau = (((tau * (10 ** digs)) + .5) // 1) * (10 ** -digs)
+#roundTau = (((tau * (10 ** digs)) + .5) // 1) * (10 ** -digs)
 #^^^ This also works for rounding tau to a specified digit of percision. 
 # However, it does not include the trailing zeroes required in zyBooks,
 # thus leading to this answer vvv
-print(f'The value of tau to {digs} digits is: {tau:.{digs}f}')
+#print(f'The value of tau to {digs} digits is: {tau:.{digs}f}')
+
+# I GOT IT INTO ONE LINE!!! GOOD LUCK WITH THIS TA MWAHAHAHHAHAHAHH
+print((str((((tau * (10 ** digs)) + .5) // 1) * (10 ** -digs)) + "0") if str((((tau * (10 ** digs)) + .5) // 1))[-3] == "0" else str((((tau * (10 ** digs)) + .5) // 1) * (10 ** -digs)))
+print(tau)
