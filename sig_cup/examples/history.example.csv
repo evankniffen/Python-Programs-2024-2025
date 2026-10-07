@@ -1,0 +1,5 @@
+forecast_as_of,event_date,event_id,p_yes,benchmark_p_yes,resolved_yes
+2022-10-10,2022-11-08,FICTIONAL-1,0.80,0.70,1
+2022-10-10,2022-11-08,FICTIONAL-2,0.40,0.50,0
+2022-10-10,2022-11-08,FICTIONAL-3,0.60,0.55,1
+2022-10-10,2022-11-08,FICTIONAL-4,0.20,0.30,0

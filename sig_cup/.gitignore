@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+work/
+config.json
+.env
+*.sqlite3
+*.sqlite3-*
+STOP
+HALT.json
+config.live-test.json
+private_runtime/
+.pytest_cache/

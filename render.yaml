@@ -1,0 +1,31 @@
+services:
+  - type: worker
+    name: evan-sig-cup-trader
+    repo: https://github.com/evankniffen/Python-Programs-2024-2025
+    branch: sig-cup-trader
+    rootDir: sig_cup
+    runtime: python
+    region: ohio
+    plan: 0.5c-512mb
+    numInstances: 1
+    autoDeployTrigger: "off"
+    buildCommand: pip install -r requirements.txt && python -m unittest discover -s tests -v
+    startCommand: python -m cupbot.cloud
+    maxShutdownDelaySeconds: 300
+    disk:
+      name: sig-cup-state
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: PYTHON_VERSION
+        value: "3.12.11"
+      - key: SIG_API_KEY
+        sync: false
+      - key: SIG_EXPECTED_PROFILE_ID
+        sync: false
+      - key: SIG_LIVE
+        value: "false"
+      - key: SIG_STATE_DIR
+        value: /var/data/sig-cup

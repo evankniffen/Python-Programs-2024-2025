@@ -1,0 +1,9 @@
+[
+  {
+    "group_id": "DEMO-complementary-distinct-contracts",
+    "settlement_reviewed": false,
+    "legs": [{"exchange_id": "99001", "side": "yes"}, {"exchange_id": "99002", "side": "yes"}],
+    "allowed_outcomes": [{"99001": 1, "99002": 0}, {"99001": 0, "99002": 1}],
+    "note": "This is a separate structural illustration, not a valid relationship between the fictional independent races in mapping.example.json. Replace with an actually exhaustive, mutually exclusive pair."
+  }
+]

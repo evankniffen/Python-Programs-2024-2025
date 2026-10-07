@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "retrieved_on_utc": "2026-10-07",
+  "purpose": "Primary-source research observations; not calibrated forecasts or executable model inputs",
+  "validated_for_trading": false,
+  "notes": [
+    "Percentages are the publishers' rounded figures; do not renormalize them silently.",
+    "Candidate support is not the probability of winning an election.",
+    "Published margin of error or credibility interval is not a supplied standard error of the Democratic-minus-Republican margin.",
+    "Races within one poll release share the same sample and must not be treated as independent evidence.",
+    "The fit command requires a reviewed CSV and exact contract mapping; this JSON is staged research only."
+  ],
+  "poll_releases": [
+    {
+      "release_id": "marist-maine-october-2026",
+      "pollster": "Marist",
+      "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-maine-october-2026/",
+      "published_on": "2026-10-06",
+      "field_start": "2026-10-01",
+      "field_end": "2026-10-04",
+      "population": "registered voters",
+      "sample_size": 1505,
+      "reported_uncertainty": {"type": "margin of error", "plus_minus_percentage_points": 3.8},
+      "races": [
+        {
+          "race_label": "Maine U.S. Senate",
+          "candidate_support_percent": [
+            {"name": "Troy Jackson", "party": "Democratic", "support": 51},
+            {"name": "Susan Collins", "party": "Republican", "support": 47}
+          ],
+          "dem_minus_rep_margin_percentage_points": 4,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false
+        },
+        {
+          "race_label": "Maine Governor",
+          "candidate_support_percent": [
+            {"name": "Hannah Pingree", "party": "Democratic", "support": 52},
+            {"name": "Bobby Charles", "party": "Republican", "support": 40},
+            {"name": "Bennett", "party": "Independent", "support": 6}
+          ],
+          "dem_minus_rep_margin_percentage_points": 12,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false,
+          "model_compatibility": "Independent candidate requires explicit treatment beyond the current two-party model"
+        }
+      ]
+    },
+    {
+      "release_id": "marist-texas-september-2026",
+      "pollster": "Marist",
+      "source": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-texas-september-2026/",
+      "published_on": "2026-09-23",
+      "field_start": "2026-09-17",
+      "field_end": "2026-09-20",
+      "population": "registered voters",
+      "sample_size": 1139,
+      "reported_uncertainty": {"type": "margin of error", "plus_minus_percentage_points": 4.4},
+      "races": [
+        {
+          "race_label": "Texas U.S. Senate",
+          "candidate_support_percent": [
+            {"name": "James Talarico", "party": "Democratic", "support": 50},
+            {"name": "Ken Paxton", "party": "Republican", "support": 44}
+          ],
+          "dem_minus_rep_margin_percentage_points": 6,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false
+        },
+        {
+          "race_label": "Texas Governor",
+          "candidate_support_percent": [
+            {"name": "Gina Hinojosa", "party": "Democratic", "support": 49},
+            {"name": "Greg Abbott", "party": "Republican", "support": 46}
+          ],
+          "dem_minus_rep_margin_percentage_points": 3,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false
+        }
+      ]
+    },
+    {
+      "release_id": "emerson-pix11-ny17-september-2026",
+      "pollster": "Emerson College Polling / PIX11",
+      "source": "https://emersoncollegepolling.com/ny-17-2026-poll/",
+      "published_on": null,
+      "publication_note": "Exact publication date was not visible in the retrieved page text",
+      "field_start": "2026-09-27",
+      "field_end": "2026-09-29",
+      "population": "likely voters",
+      "sample_size": 400,
+      "reported_uncertainty": {"type": "credibility interval", "plus_minus_percentage_points": 4.9},
+      "races": [
+        {
+          "race_label": "New York U.S. House District 17",
+          "candidate_support_percent": [
+            {"name": "Cait Conley", "party": "Democratic", "support": 48},
+            {"name": "Mike Lawler", "party": "Republican", "support": 46}
+          ],
+          "undecided_percent": 7,
+          "rounding_note": "Published rounded support and undecided percentages total 101",
+          "dem_minus_rep_margin_percentage_points": 2,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false
+        }
+      ]
+    }
+  ]
+}

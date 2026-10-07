@@ -1,0 +1,21 @@
+{
+  "note": "Fictional examples only. Replace IDs/titles/races from authenticated discovery; review two-party and chamber settlement rules.",
+  "model_validated": false,
+  "model_parameters": {
+    "poll_half_life_days": 14,
+    "pollster_error_sd": 1.5,
+    "national_error_sd": 2.5,
+    "regional_error_sd": 1.5,
+    "race_error_sd": 2.5,
+    "stress_margin_shift": 2.0
+  },
+  "races": {
+    "FICTIONAL-RACE-A": {"region": "demo", "national_loading": 1},
+    "FICTIONAL-RACE-B": {"region": "demo", "national_loading": 1}
+  },
+  "contracts": [
+    {"exchange_id": "99001", "type": "race", "race_id": "FICTIONAL-RACE-A", "yes_party": "D", "title": "DEMO: Democratic candidate wins fictional A", "source": "Fictional demo polls", "resolution_reviewed": false, "approved": false},
+    {"exchange_id": "99002", "type": "race", "race_id": "FICTIONAL-RACE-B", "yes_party": "D", "title": "DEMO: Democratic candidate wins fictional B", "source": "Fictional demo polls", "resolution_reviewed": false, "approved": false},
+    {"exchange_id": "99003", "type": "chamber", "race_ids": ["FICTIONAL-RACE-A", "FICTIONAL-RACE-B"], "dem_wins_needed": 2, "yes_party": "D", "title": "DEMO: Democratic candidates win both fictional races", "source": "Fictional demo polls and explicit conjunction", "resolution_reviewed": false, "approved": false}
+  ]
+}

@@ -1,0 +1,1530 @@
+{
+  "schema_version": 2,
+  "retrieved_on_utc": "2026-10-07",
+  "purpose": "Primary-source research observations; not calibrated forecasts or executable model inputs",
+  "validated_for_trading": false,
+  "notes": [
+    "Percentages are the publishers' rounded figures; do not renormalize them silently.",
+    "Candidate support is not the probability of winning an election.",
+    "Published margin of error or credibility interval is not a supplied standard error of the Democratic-minus-Republican margin.",
+    "Races within one poll release share the same sample and must not be treated as independent evidence.",
+    "The fit command requires a reviewed CSV and exact contract mapping; this JSON is staged research only.",
+    "Store each release, table packet, spreadsheet and rounded summary under one survey_id. Multiple versions of a survey are not independent polls.",
+    "Support values beginning with < are the publisher's censored percentages. Preserve them without replacing with zero or a midpoint.",
+    "Other, another party's candidate, undecided, unsure, refused and no response retain the original response category; do not redistribute these shares.",
+    "A generic congressional ballot is a national vote-intention observation and does not directly identify House-control probabilities or individual seats.",
+    "The official Maine rules verified here are election-method metadata, not evidence that a new rule took effect on October 6.",
+    "Quinnipiac's House-control preference item is not automatically comparable to generic candidate vote-intention ballots.",
+    "A pending source packet contains only verified publisher headlines; null methodology and response categories are missing, not zero.",
+    "Alaska election-night reports are first-choice counts; final ranked-choice results may arrive after trading ends."
+  ],
+  "poll_releases": [
+    {
+      "release_id": "marist-maine-october-2026",
+      "pollster": "Marist",
+      "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-maine-october-2026/",
+      "published_on": "2026-10-06",
+      "field_start": "2026-10-01",
+      "field_end": "2026-10-04",
+      "population": "registered voters",
+      "sample_size": 1505,
+      "reported_uncertainty": {
+        "type": "margin of error",
+        "plus_minus_percentage_points": 3.8,
+        "publisher_label": "MOE",
+        "design_effect": 2.21
+      },
+      "races": [
+        {
+          "race_label": "Maine U.S. Senate",
+          "candidate_support_percent": [
+            {
+              "name": "Troy Jackson",
+              "party": "Democratic",
+              "support": 51
+            },
+            {
+              "name": "Susan Collins",
+              "party": "Republican",
+              "support": 47
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 4,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false,
+          "observation_type": "candidate_vote_intention",
+          "election_win_probability": null,
+          "additional_response_percent": {
+            "Another party's candidate": 1,
+            "Undecided": 1,
+            "Vol: No response": "<1"
+          },
+          "full_tables_pdf_page": 6,
+          "election_method": "Ranked-choice general election; runoff rounds only if needed"
+        },
+        {
+          "race_label": "Maine Governor",
+          "candidate_support_percent": [
+            {
+              "name": "Hannah Pingree",
+              "party": "Democratic",
+              "support": 52
+            },
+            {
+              "name": "Bobby Charles",
+              "party": "Republican",
+              "support": 40
+            },
+            {
+              "name": "Rick Bennett",
+              "party": "Independent",
+              "support": 6
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 12,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false,
+          "model_compatibility": "Independent candidate requires explicit treatment beyond the current two-party model",
+          "observation_type": "candidate_vote_intention",
+          "election_win_probability": null,
+          "additional_response_percent": {
+            "Another party's candidate": "<1",
+            "Undecided": 2,
+            "Vol: No response": "<1"
+          },
+          "full_tables_pdf_page": 9,
+          "election_method": "Plurality general election"
+        }
+      ],
+      "survey_id": "marist-maine-october-2026",
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-maine-october-2026/"
+        },
+        {
+          "role": "full_tables_same_survey",
+          "url": "https://maristpoll.marist.edu/wp-content/uploads/2026/10/Marist-Poll_Maine-NOS-and-Tables_202610051032xtc92617B.pdf"
+        }
+      ],
+      "change_classification": "existing_observation_rechecked",
+      "last_verified_utc": "2026-10-07T02:32:52.362351+00:00"
+    },
+    {
+      "release_id": "marist-texas-september-2026",
+      "pollster": "Marist",
+      "source": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-texas-september-2026/",
+      "published_on": "2026-09-23",
+      "field_start": "2026-09-17",
+      "field_end": "2026-09-20",
+      "population": "registered voters",
+      "sample_size": 1139,
+      "reported_uncertainty": {
+        "type": "margin of error",
+        "plus_minus_percentage_points": 4.4,
+        "publisher_label": "MOE"
+      },
+      "races": [
+        {
+          "race_label": "Texas U.S. Senate",
+          "candidate_support_percent": [
+            {
+              "name": "James Talarico",
+              "party": "Democratic",
+              "support": 50
+            },
+            {
+              "name": "Ken Paxton",
+              "party": "Republican",
+              "support": 44
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 6,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false,
+          "observation_type": "candidate_vote_intention",
+          "election_win_probability": null,
+          "additional_response_percent": {
+            "Other": 2,
+            "Undecided/Refused": 4
+          },
+          "full_tables_pdf_page": 6
+        },
+        {
+          "race_label": "Texas Governor",
+          "candidate_support_percent": [
+            {
+              "name": "Gina Hinojosa",
+              "party": "Democratic",
+              "support": 49
+            },
+            {
+              "name": "Greg Abbott",
+              "party": "Republican",
+              "support": 46
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 3,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false,
+          "observation_type": "candidate_vote_intention",
+          "election_win_probability": null,
+          "additional_response_percent": {
+            "Other": 1,
+            "Undecided/Refused": 3
+          },
+          "full_tables_pdf_page": 9,
+          "rounding_note": "The published response categories total 99; no renormalization applied."
+        }
+      ],
+      "survey_id": "marist-texas-september-2026",
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-texas-september-2026/"
+        },
+        {
+          "role": "full_tables_same_survey",
+          "url": "https://maristpoll.marist.edu/wp-content/uploads/2026/09/Marist-Poll_TX-NOS-and-Tables_202609221131.pdf"
+        }
+      ],
+      "change_classification": "existing_observation_rechecked",
+      "last_verified_utc": "2026-10-07T02:32:52.362351+00:00"
+    },
+    {
+      "release_id": "emerson-pix11-ny17-september-2026",
+      "pollster": "Emerson College Polling / PIX11",
+      "source": "https://emersoncollegepolling.com/ny-17-2026-poll/",
+      "published_on": "2026-10-01",
+      "publication_note": "Publication date verified against the pollster's own poll index.",
+      "field_start": "2026-09-27",
+      "field_end": "2026-09-29",
+      "population": "likely voters",
+      "sample_size": 400,
+      "reported_uncertainty": {
+        "type": "credibility interval",
+        "plus_minus_percentage_points": 4.9,
+        "publisher_label": "credibility interval",
+        "scope": "Overall sample; not the standard error of the candidate margin",
+        "publisher_confidence_level_percent": 95
+      },
+      "races": [
+        {
+          "race_label": "New York U.S. House District 17",
+          "candidate_support_percent": [
+            {
+              "name": "Cait Conley",
+              "party": "Democratic",
+              "support": 48
+            },
+            {
+              "name": "Mike Lawler",
+              "party": "Republican",
+              "support": 46
+            }
+          ],
+          "undecided_percent": 7,
+          "rounding_note": "Rounded headline 48/46/7 totals 101; full-table 47.9/45.6/6.5 totals 100. Both describe one survey.",
+          "dem_minus_rep_margin_percentage_points": 2,
+          "margin_standard_error_percentage_points": null,
+          "contract_mapping_reviewed": false,
+          "observation_type": "candidate_vote_intention",
+          "election_win_probability": null,
+          "full_table_support_percent": {
+            "Cait Conley": 47.9,
+            "Mike Lawler": 45.6,
+            "Undecided": 6.5
+          },
+          "full_table_dem_minus_rep_margin_percentage_points": 2.3,
+          "third_party_support_percent": null,
+          "third_party_note": "No third-party option appears in the retrieved full-results vote-intention row; this is not an observed zero percent third-party vote share."
+        }
+      ],
+      "survey_id": "emerson-pix11-ny17-september-2026",
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://emersoncollegepolling.com/ny-17-2026-poll/"
+        },
+        {
+          "role": "publication_date_index",
+          "url": "https://emersoncollegepolling.com/blog/"
+        },
+        {
+          "role": "full_results_same_survey",
+          "url": "https://docs.google.com/spreadsheets/d/1gjED-hyQ-n55NjZa-D8FwRJAj-5U_Rlh/edit?gid=1122632566"
+        }
+      ],
+      "change_classification": "publication_date_and_precision_supplement",
+      "last_verified_utc": "2026-10-07T02:32:52.362351+00:00"
+    },
+    {
+      "release_id": "marist-michigan-september-2026",
+      "survey_id": "marist-michigan-september-2026",
+      "pollster": "Marist",
+      "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-september-2026/",
+      "published_on": "2026-09-30",
+      "field_start": "2026-09-24",
+      "field_end": "2026-09-27",
+      "population": "registered voters",
+      "sample_size": 1235,
+      "reported_uncertainty": {
+        "type": "margin of error",
+        "plus_minus_percentage_points": 3.8,
+        "design_effect": 1.87,
+        "publisher_label": "MOE"
+      },
+      "races": [
+        {
+          "race_label": "Michigan U.S. Senate",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Abdul El-Sayed",
+              "party": "Democratic",
+              "support": 51
+            },
+            {
+              "name": "Mike Rogers",
+              "party": "Republican",
+              "support": 44
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 7,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "additional_response_percent": {
+            "Another party's candidate": 1,
+            "Undecided": 3,
+            "Vol: No response": 1
+          },
+          "full_tables_pdf_page": 8
+        },
+        {
+          "race_label": "Michigan Governor",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Jocelyn Benson",
+              "party": "Democratic",
+              "support": 53
+            },
+            {
+              "name": "John James",
+              "party": "Republican",
+              "support": 41
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 12,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "additional_response_percent": {
+            "Another party's candidate": 2,
+            "Undecided": 4,
+            "Vol: No response": "<1"
+          },
+          "full_tables_pdf_page": 11
+        }
+      ],
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-september-2026/"
+        },
+        {
+          "role": "full_tables_same_survey",
+          "url": "https://maristpoll.marist.edu/wp-content/uploads/2026/09/Marist-Poll_MI-NOS-and-Tables_202609281401@9159_7e99y.pdf"
+        }
+      ],
+      "change_classification": "previously_missing_september_release",
+      "last_verified_utc": "2026-10-07T02:32:52.362351+00:00"
+    },
+    {
+      "release_id": "marist-ohio-september-2026",
+      "survey_id": "marist-ohio-september-2026",
+      "pollster": "Marist",
+      "source": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-september-2026/",
+      "published_on": "2026-09-29",
+      "field_start": "2026-09-24",
+      "field_end": "2026-09-27",
+      "population": "registered voters",
+      "sample_size": 1298,
+      "reported_uncertainty": {
+        "type": "margin of error",
+        "plus_minus_percentage_points": 3.8,
+        "design_effect": 1.93,
+        "publisher_label": "MOE"
+      },
+      "races": [
+        {
+          "race_label": "Ohio U.S. Senate",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Sherrod Brown",
+              "party": "Democratic",
+              "support": 51
+            },
+            {
+              "name": "Jon Husted",
+              "party": "Republican",
+              "support": 43
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 8,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "additional_response_percent": {
+            "Another party's candidate": 1,
+            "Undecided": 4,
+            "Vol: No response": 1
+          },
+          "full_tables_pdf_page": 8
+        },
+        {
+          "race_label": "Ohio Governor",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Amy Acton",
+              "party": "Democratic",
+              "support": 50
+            },
+            {
+              "name": "Vivek Ramaswamy",
+              "party": "Republican",
+              "support": 44
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 6,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "additional_response_percent": {
+            "Another party's candidate": 3,
+            "Undecided": 3,
+            "Vol: No response": "<1"
+          },
+          "full_tables_pdf_page": 11
+        }
+      ],
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-september-2026/"
+        },
+        {
+          "role": "full_tables_same_survey",
+          "url": "https://maristpoll.marist.edu/wp-content/uploads/2026/09/Marist-Poll_OH-NOS-and-Tables_202609281347aC909p6465.pdf"
+        }
+      ],
+      "change_classification": "previously_missing_september_release",
+      "last_verified_utc": "2026-10-07T02:32:52.362351+00:00"
+    },
+    {
+      "release_id": "marist-national-september-2026",
+      "survey_id": "marist-national-september-2026",
+      "pollster": "NPR / PBS News / Marist",
+      "source": "https://maristpoll.marist.edu/polls/2026-midterm-elections-september-2026/",
+      "published_on": "2026-09-23",
+      "field_start": "2026-09-14",
+      "field_end": "2026-09-15",
+      "population": "registered voters",
+      "sample_size": 1280,
+      "reported_uncertainty": {
+        "type": "margin of error",
+        "plus_minus_percentage_points": 3.8,
+        "publisher_label": "MOE"
+      },
+      "races": [
+        {
+          "race_label": "National generic congressional ballot",
+          "observation_type": "generic_congressional_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Democratic candidate",
+              "party": "Democratic",
+              "support": 53
+            },
+            {
+              "name": "Republican candidate",
+              "party": "Republican",
+              "support": 41
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 12,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "additional_response_percent": {
+            "Another party's candidate": 2,
+            "Vol: Unsure": 3,
+            "Vol: No response": 1
+          },
+          "full_tables_pdf_page": 9
+        }
+      ],
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://maristpoll.marist.edu/polls/2026-midterm-elections-september-2026/"
+        },
+        {
+          "role": "full_tables_same_survey",
+          "url": "https://maristpoll.marist.edu/wp-content/uploads/2026/09/NPR_PBS-News_Marist-Poll_USA-NOS-and-Tables_202609171435.pdf"
+        }
+      ],
+      "change_classification": "previously_missing_september_release",
+      "last_verified_utc": "2026-10-07T02:32:52.362351+00:00"
+    },
+    {
+      "release_id": "emerson-national-september-2026",
+      "survey_id": "emerson-national-september-2026",
+      "pollster": "Emerson College Polling",
+      "source": "https://emersoncollegepolling.com/september-2026-national-poll-democrats/",
+      "published_on": "2026-09-24",
+      "field_start": "2026-09-21",
+      "field_end": "2026-09-22",
+      "population": "likely voters",
+      "sample_size": 1000,
+      "reported_uncertainty": {
+        "type": "credibility interval",
+        "plus_minus_percentage_points": 3,
+        "publisher_label": "credibility interval",
+        "scope": "Overall sample; not the standard error of the candidate margin",
+        "publisher_confidence_level_percent": 95
+      },
+      "races": [
+        {
+          "race_label": "National generic congressional ballot",
+          "observation_type": "generic_congressional_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Democratic candidate",
+              "party": "Democratic",
+              "support": 53
+            },
+            {
+              "name": "Republican candidate",
+              "party": "Republican",
+              "support": 42
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 11,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "full_table_support_percent": {
+            "Democratic candidate": 53.2,
+            "Republican candidate": 41.9,
+            "Undecided": 4.9
+          },
+          "full_table_dem_minus_rep_margin_percentage_points": 11.3,
+          "third_party_support_percent": null,
+          "third_party_note": "No third-party category appears in the retrieved vote-intention row; do not treat that as an observed zero."
+        }
+      ],
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://emersoncollegepolling.com/september-2026-national-poll-democrats/"
+        },
+        {
+          "role": "publication_date_index",
+          "url": "https://emersoncollegepolling.com/blog/"
+        },
+        {
+          "role": "full_results_same_survey",
+          "url": "https://docs.google.com/spreadsheets/d/1fPJgYdp3a18AbCbArB1FRC6EcsQ8AqjS/edit?gid=91463791"
+        }
+      ],
+      "change_classification": "previously_missing_september_release",
+      "last_verified_utc": "2026-10-07T02:32:52.362351+00:00"
+    },
+    {
+      "release_id": "emerson-nexstar-kansas-september-2026",
+      "survey_id": "emerson-nexstar-kansas-september-2026",
+      "pollster": "Emerson College Polling / Nexstar Media",
+      "source": "https://emersoncollegepolling.com/kansas-2026/",
+      "published_on": "2026-09-18",
+      "field_start": "2026-09-15",
+      "field_end": "2026-09-16",
+      "population": "likely voters",
+      "sample_size": 750,
+      "reported_uncertainty": {
+        "type": "credibility interval",
+        "plus_minus_percentage_points": 3.6,
+        "publisher_label": "credibility interval",
+        "scope": "Overall sample; not the standard error of the candidate margin",
+        "publisher_confidence_level_percent": 95
+      },
+      "races": [
+        {
+          "race_label": "Kansas U.S. Senate",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Adam Hamilton",
+              "party": "Democratic",
+              "support": 45
+            },
+            {
+              "name": "Roger Marshall",
+              "party": "Republican",
+              "support": 43
+            },
+            {
+              "name": "David Graham",
+              "party": "Libertarian",
+              "support": 4
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": 2,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "additional_response_percent": {
+            "Undecided": 8
+          },
+          "full_table_support_percent": {
+            "Adam Hamilton": 44.8,
+            "Roger Marshall": 43.3,
+            "David C Graham": 3.7,
+            "Undecided": 8.2
+          },
+          "full_table_dem_minus_rep_margin_percentage_points": 1.5
+        },
+        {
+          "race_label": "Kansas Governor",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Cindy Holscher",
+              "party": "Democratic",
+              "support": 44
+            },
+            {
+              "name": "Ty Masterson",
+              "party": "Republican",
+              "support": 51
+            }
+          ],
+          "dem_minus_rep_margin_percentage_points": -7,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "additional_response_percent": {
+            "Undecided": 6
+          },
+          "full_table_support_percent": {
+            "Cindy Holscher": 43.5,
+            "Ty Masterson": 50.8,
+            "Undecided": 5.7
+          },
+          "full_table_dem_minus_rep_margin_percentage_points": -7.3,
+          "third_party_support_percent": null,
+          "third_party_note": "No third-party category appears in the retrieved vote-intention row; do not treat that as an observed zero.",
+          "rounding_note": "Rounded headline 44/51/6 totals 101; same survey table 43.5/50.8/5.7 totals 100."
+        }
+      ],
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://emersoncollegepolling.com/kansas-2026/"
+        },
+        {
+          "role": "publication_date_index",
+          "url": "https://emersoncollegepolling.com/blog/"
+        },
+        {
+          "role": "full_results_same_survey",
+          "url": "https://docs.google.com/spreadsheets/d/1tg-s80eUIL2lkRdrNEk3RCMsyEGaKXSg/edit?ouid=107857247170786005927&rtpof=true&sd=true&usp=sharing"
+        }
+      ],
+      "change_classification": "previously_missing_september_release",
+      "last_verified_utc": "2026-10-07T02:32:52.362351+00:00"
+    },
+    {
+      "release_id": "suffolk-usatoday-ohio-october-2026",
+      "survey_id": "suffolk-usatoday-ohio-september23-27-2026",
+      "pollster": "Suffolk University / USA TODAY Network Ohio",
+      "source": "https://www.suffolk.edu/-/media/suffolk/documents/academics/research-at-suffolk/suprc/polls/other-states/2026/10_2_2026_ohio_press_release.pdf",
+      "published_on": "2026-10-02",
+      "field_start": "2026-09-23",
+      "field_end": "2026-09-27",
+      "population": "likely voters",
+      "sample_size": 500,
+      "population_definition": "Respondents very or somewhat likely to vote in the November general election.",
+      "reported_uncertainty": {
+        "type": "margin of error",
+        "plus_minus_percentage_points": 4.4,
+        "publisher_label": "margin of sampling error",
+        "publisher_confidence_level_percent": 95,
+        "scope": "Statewide total sample"
+      },
+      "races": [
+        {
+          "race_label": "Ohio U.S. Senate",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Sherrod Brown",
+              "party": "Democratic",
+              "support": 47
+            },
+            {
+              "name": "Jon Husted",
+              "party": "Republican",
+              "support": 44
+            },
+            {
+              "name": "William B. Redpath",
+              "party": "Libertarian",
+              "support": 2
+            },
+            {
+              "name": "Greg Levy",
+              "party": "Other-Party/No Party",
+              "support": 1
+            }
+          ],
+          "additional_response_percent": {
+            "Undecided": 6
+          },
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "dem_minus_rep_margin_percentage_points": 3,
+          "full_table_support_percent": {
+            "Sherrod Brown": 46.6,
+            "Jon Husted": 44,
+            "Greg Levy": 1,
+            "William B. Redpath": 2,
+            "Vote/Lean Write-in": 0,
+            "Undecided": 6,
+            "Refused": 0.4
+          },
+          "full_table_dem_minus_rep_margin_percentage_points": 2.6,
+          "full_tables_pdf_page": 2,
+          "question_scope": "Vote intention or current leaning",
+          "headline_categories_complete": false
+        },
+        {
+          "race_label": "Ohio Governor",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "Amy Acton",
+              "party": "Democratic",
+              "support": 50
+            },
+            {
+              "name": "Vivek Ramaswamy",
+              "party": "Republican",
+              "support": 41
+            },
+            {
+              "name": "Don Kissick",
+              "party": "Libertarian",
+              "support": 3
+            }
+          ],
+          "additional_response_percent": {
+            "Undecided": 5
+          },
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "dem_minus_rep_margin_percentage_points": 9,
+          "full_table_support_percent": {
+            "Amy Acton": 50.4,
+            "Vivek Ramaswamy": 41.4,
+            "Don Kissick": 2.8,
+            "Vote/Lean Write-in": 0.2,
+            "Undecided": 4.8,
+            "Refused": 0.4
+          },
+          "full_table_dem_minus_rep_margin_percentage_points": 9,
+          "full_tables_pdf_page": 3,
+          "question_scope": "Vote intention or current leaning",
+          "headline_categories_complete": false,
+          "rounding_note": "The release's 50/41/3/5 headline totals 99. The full marginal row totals 100 and preserves write-in and refused categories."
+        }
+      ],
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://www.suffolk.edu/-/media/suffolk/documents/academics/research-at-suffolk/suprc/polls/other-states/2026/10_2_2026_ohio_press_release.pdf"
+        },
+        {
+          "role": "full_marginals_same_survey",
+          "url": "https://www.suffolk.edu/-/media/suffolk/documents/academics/research-at-suffolk/suprc/polls/other-states/2026/10_2_2026_ohio_statewide_complete_marginals.pdf?hash=F70867C91DB279D508E706D79D98CCAA446A720D&la=en"
+        },
+        {
+          "role": "crosstabs_same_survey",
+          "url": "https://www.suffolk.edu/-/media/suffolk/documents/academics/research-at-suffolk/suprc/polls/other-states/2026/10_2_2026_ohio_statewide_complete_tables.pdf?hash=43CA25B09252FFC5BD69701E79DB087C78CE899A&la=en"
+        },
+        {
+          "role": "methodology_and_publication_index",
+          "url": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/other-states"
+        }
+      ],
+      "related_sample_note": "The release also describes a separate Portage County sample (n=300, margin of error +/-5.6). It is not statewide evidence and is excluded from these statewide observations.",
+      "comparison_with_saved_research": "Marist's Ohio sample was registered voters, fielded September 24-27. The samples overlap in field dates and differ in voter population; the difference in support is not identified as a time trend.",
+      "change_classification": "previously_missing_october_release",
+      "last_verified_utc": "2026-10-07T02:44:41Z"
+    },
+    {
+      "release_id": "marquette-wisconsin-september30-2026",
+      "survey_id": "marquette-mlsp91-wisconsin-september2026",
+      "publisher_survey_label": "MLSP91",
+      "pollster": "Marquette Law School Poll",
+      "source": "https://law.marquette.edu/poll/2026/09/30/mlsp91-press-release/",
+      "published_on": "2026-09-30",
+      "field_start": "2026-09-16",
+      "field_end": "2026-09-23",
+      "population": "registered voters",
+      "sample_size": 843,
+      "reported_uncertainty": {
+        "type": "margin of error",
+        "plus_minus_percentage_points": 4.3,
+        "publisher_label": "margin of error"
+      },
+      "races": [
+        {
+          "race_label": "Wisconsin Governor",
+          "observation_type": "candidate_vote_intention",
+          "candidate_support_percent": [
+            {
+              "name": "David Crowley",
+              "party": "Democratic",
+              "support": 49
+            },
+            {
+              "name": "Tom Tiffany",
+              "party": "Republican",
+              "support": 46
+            }
+          ],
+          "additional_response_percent": {
+            "Haven't decided": 5
+          },
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "population": "likely voters",
+          "sample_size": 692,
+          "reported_uncertainty": {
+            "type": "margin of error",
+            "plus_minus_percentage_points": 4.8,
+            "publisher_label": "margin of error"
+          },
+          "dem_minus_rep_margin_percentage_points": 3,
+          "same_survey_population_results": [
+            {
+              "population": "likely voters",
+              "sample_size": 692,
+              "reported_uncertainty": {
+                "type": "margin of error",
+                "plus_minus_percentage_points": 4.8,
+                "publisher_label": "margin of error"
+              },
+              "candidate_support_percent": [
+                {
+                  "name": "David Crowley",
+                  "party": "Democratic",
+                  "support": 49
+                },
+                {
+                  "name": "Tom Tiffany",
+                  "party": "Republican",
+                  "support": 46
+                }
+              ],
+              "additional_response_percent": {
+                "Haven't decided": 5
+              },
+              "dem_minus_rep_margin_percentage_points": 3
+            },
+            {
+              "population": "registered voters",
+              "sample_size": 843,
+              "reported_uncertainty": {
+                "type": "margin of error",
+                "plus_minus_percentage_points": 4.3,
+                "publisher_label": "margin of error"
+              },
+              "candidate_support_percent": [
+                {
+                  "name": "David Crowley",
+                  "party": "Democratic",
+                  "support": 46
+                },
+                {
+                  "name": "Tom Tiffany",
+                  "party": "Republican",
+                  "support": 45
+                }
+              ],
+              "additional_response_percent": {
+                "Haven't decided": 9,
+                "Would not vote": 0
+              },
+              "dem_minus_rep_margin_percentage_points": 1
+            }
+          ],
+          "third_party_support_percent": null,
+          "third_party_note": "The retrieved question offers the two named candidates and an undecided response. Third-party support was not measured as a separate category.",
+          "estimate_note": "This is the initial candidate-choice question. The separate leaner follow-up has a different denominator and is not combined here.",
+          "same_sample_note": "The registered-voter result and likely-voter subset belong to the same survey, not two independent polls."
+        }
+      ],
+      "sources": [
+        {
+          "role": "release",
+          "url": "https://law.marquette.edu/poll/2026/09/30/mlsp91-press-release/"
+        },
+        {
+          "role": "registered_voter_toplines_same_survey",
+          "url": "https://law.marquette.edu/assets/community/poll/MLSP91/MLSP91ToplinesRV.html"
+        },
+        {
+          "role": "likely_voter_toplines_same_survey",
+          "url": "https://law.marquette.edu/assets/community/poll/MLSP91/MLSP91ToplinesLV.html"
+        },
+        {
+          "role": "methodology_same_survey",
+          "url": "https://law.marquette.edu/assets/community/poll/MLSP91/MLSP91Methodology.pdf"
+        }
+      ],
+      "change_classification": "previously_missing_september_release",
+      "last_verified_utc": "2026-10-07T02:44:41Z"
+    },
+    {
+      "release_id": "quinnipiac-national-september29-2026",
+      "survey_id": "quinnipiac-national-september24-27-2026",
+      "pollster": "Quinnipiac University",
+      "source": "https://poll.qu.edu/poll-release?releaseid=3968",
+      "published_on": "2026-09-29",
+      "field_start": "2026-09-24",
+      "field_end": "2026-09-27",
+      "population": "self-identified registered voters",
+      "sample_size": 1032,
+      "reported_uncertainty": {
+        "type": "margin of error",
+        "plus_minus_percentage_points": 3.8,
+        "publisher_label": "margin of error",
+        "design_effect_included": true
+      },
+      "races": [
+        {
+          "race_label": "National preference for party controlling the U.S. House",
+          "observation_type": "house_control_preference",
+          "candidate_support_percent": [
+            {
+              "name": "Democratic Party",
+              "party": "Democratic",
+              "support": 51
+            },
+            {
+              "name": "Republican Party",
+              "party": "Republican",
+              "support": 39
+            }
+          ],
+          "additional_response_percent": {
+            "DK/NA": 9
+          },
+          "dem_minus_rep_margin_percentage_points": 12,
+          "margin_standard_error_percentage_points": null,
+          "election_win_probability": null,
+          "contract_mapping_reviewed": false,
+          "third_party_support_percent": null,
+          "third_party_note": "No third-party response category is published in this question.",
+          "question_scope": "Respondent preference for which party wins House control.",
+          "comparability_note": "This question measures a desired House-control outcome, not the respondent's intended vote for a local congressional candidate. Do not pool it automatically with generic vote-intention ballots.",
+          "rounding_note": "Published rounded figures total 99; no renormalization applied."
+        }
+      ],
+      "sources": [
+        {
+          "role": "release_and_question_table",
+          "url": "https://poll.qu.edu/poll-release?releaseid=3968"
+        },
+        {
+          "role": "publication_date_index",
+          "url": "https://poll.qu.edu/poll-results"
+        }
+      ],
+      "change_classification": "previously_missing_september_release",
+      "last_verified_utc": "2026-10-07T02:44:41Z"
+    }
+  ],
+  "last_reviewed_utc": "2026-10-07T02:44:41Z",
+  "as_of_date_chicago": "2026-10-06",
+  "baseline_note": "Existing five candidate-contest observations were imported from the saved toolkit. Added September releases below are coverage additions, not newly published October 6 polls.",
+  "official_election_findings": [
+    {
+      "finding_id": "maine-ranked-choice-and-plurality-2026",
+      "authority": "Maine Secretary of State",
+      "classification": "newly_verified_modeling_detail",
+      "source_updated_on": "2026-10-06",
+      "supporting_release_published_on": "2026-09-04",
+      "sources": [
+        "https://www.maine.gov/sos/elections-voting/resources-for-ranked-choice-voting",
+        "https://www.maine.gov/sos/elections-voting/ranked-choice-voting-frequently-asked-questions",
+        "https://www3.maine.gov/sos/news/general-election-two-months-away-secretary-states-office-provides-update-maine-election-1"
+      ],
+      "observed_rule": "General elections for federal offices use ranked-choice voting; Maine governor general election uses plurality. The September 4 authority release specifically identifies U.S. Senate and CD-2 as ranked-choice races because of declared write-in candidates.",
+      "research_implication": "Model the final winner consistently with ranked-choice transfers if required. A reported first-choice lead alone is not a final-win probability. Governor third-party votes affect the plurality comparison.",
+      "uncertainty": "No transfer estimates or win probabilities are inferred from these sources."
+    },
+    {
+      "finding_id": "maine-absentee-launch-october-2026",
+      "authority": "Maine Secretary of State",
+      "published_on": "2026-10-05",
+      "sources": [
+        "https://www.maine.gov/sos/news/person-no-excuse-absentee-voting-underway-maine",
+        "https://www3.maine.gov/sos/news/general-election-two-months-away-secretary-states-office-provides-update-maine-election-1"
+      ],
+      "observed_development": "October 5 release confirms in-person no-excuse absentee voting is underway through October 29. The previously announced statutory period begins October 4; the October 5 release marks the weekday launch.",
+      "ballot_request_observation": {
+        "as_of_date": "2026-10-02",
+        "count_operator": ">",
+        "count": 70000,
+        "measure": "absentee ballots requested",
+        "returned_ballot_count": null,
+        "candidate_vote_count": null
+      },
+      "research_implication": "These are requests, not returned ballots or candidate votes. Do not treat the count as partisan vote evidence."
+    },
+    {
+      "finding_id": "ohio-early-and-absentee-launch-october6-2026",
+      "authority": "Ohio Secretary of State",
+      "classification": "previously_missing_recent_official_development",
+      "published_on": "2026-10-05",
+      "event_date": "2026-10-06",
+      "sources": [
+        "https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-10-05"
+      ],
+      "observed_development": "Early in-person and regular absentee voting began October 6 for the November 3 general election. Regular absentee ballots must arrive by 7:30 p.m. on Election Day.",
+      "candidate_vote_count": null,
+      "research_implication": "The opening of voting is calendar information. No candidate support is inferred.",
+      "last_verified_utc": "2026-10-07T02:44:41Z"
+    },
+    {
+      "finding_id": "alaska-2026-ranked-choice-tabulation-and-certification-calendar",
+      "authority": "Alaska Division of Elections",
+      "classification": "newly_verified_settlement_timing",
+      "published_on": null,
+      "sources": [
+        "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf"
+      ],
+      "source_document": "2026 General Election Media Packet, V3",
+      "source_pdf_pages": [
+        4,
+        5,
+        10
+      ],
+      "election_day": "2026-11-03",
+      "planned_ranked_choice_tabulation_date": "2026-11-18",
+      "target_certification_date": "2026-11-25",
+      "publisher_date_terminology": {
+        "certification": "Target date",
+        "ranked_choice": "Start tabulation if no candidate has a majority after the 15-day count."
+      },
+      "observed_rule": "General elections use ranked-choice voting. Election-night summary and statement-of-votes reports contain first-choice results; a separate RCV detailed report follows tabulation.",
+      "research_implication": "When transfers are required, November 3 first-choice leaders are not final winners. Planned November 18 tabulation and November 25 target certification fall after the November 4 tournament trading deadline.",
+      "uncertainty": "These dates are the authority's plan and certification target, not completed results. No transfer estimates or election-win probabilities are inferred.",
+      "last_verified_utc": "2026-10-07T02:44:41Z"
+    }
+  ],
+  "review_changes": [
+    {
+      "change_id": "suffolk-usatoday-ohio-october-2026",
+      "change": "Added the October 2 Suffolk Ohio statewide release, including full-table precision, Libertarian/no-party candidates, write-ins, undecided and refused responses.",
+      "new_to_project": true,
+      "newly_published_this_review": false
+    },
+    {
+      "change_id": "marquette-wisconsin-september30-2026",
+      "change": "Added the September 30 Marquette Wisconsin release. Likely-voter and registered-voter estimates are preserved as dependent results of the same survey.",
+      "new_to_project": true,
+      "newly_published_this_review": false
+    },
+    {
+      "change_id": "quinnipiac-national-september29-2026",
+      "change": "Added Quinnipiac's September 29 House-control preference question and identified its wording as different from a generic candidate vote-intention ballot.",
+      "new_to_project": true,
+      "newly_published_this_review": false
+    },
+    {
+      "change_id": "nyt-siena-october3-4-2026-five-state-headlines",
+      "change": "Added verified October 3 Senate and October 4 governor headlines for Alaska, Iowa, Kansas, Ohio and Texas in one pending source packet. Full-table access is blocked; methodology and unreported responses remain null.",
+      "new_to_project": true,
+      "newly_published_this_review": false
+    },
+    {
+      "change_id": "ohio-early-and-absentee-launch-october6-2026",
+      "change": "Added the Ohio Secretary of State's October 5 announcement of the October 6 early/absentee-voting launch.",
+      "new_to_project": true
+    },
+    {
+      "change_id": "alaska-2026-ranked-choice-tabulation-and-certification-calendar",
+      "change": "Verified Alaska's November 18 planned ranked-choice tabulation and November 25 target certification, after the tournament trading deadline.",
+      "new_to_project": true
+    }
+  ],
+  "coverage_check": {
+    "Marist_latest_indexed_election_release": "2026-10-06",
+    "Emerson_latest_indexed_election_release": "2026-10-01",
+    "newer_release_than_existing_latest_found": false,
+    "additional_pollster_searches": [
+      "Quinnipiac",
+      "Suffolk",
+      "UNH",
+      "Siena",
+      "Marquette"
+    ],
+    "scope_note": "No Marist or Emerson release later than the saved latest release was verified. This continuation added omitted Suffolk, Marquette, Quinnipiac and Siena releases. Siena full tables remain inaccessible, and coverage is not exhaustive.",
+    "checked_on_utc": "2026-10-07T02:44:41Z",
+    "source_indexes": [
+      "https://maristpoll.marist.edu/latest-polls/",
+      "https://emersoncollegepolling.com/blog/",
+      "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/other-states",
+      "https://law.marquette.edu/poll/category/results-and-data/",
+      "https://poll.qu.edu/poll-results",
+      "https://sri.siena.edu/"
+    ],
+    "Suffolk_latest_checked_election_release": "2026-10-02",
+    "Marquette_latest_checked_wisconsin_election_release": "2026-09-30",
+    "Quinnipiac_latest_checked_election_related_release": "2026-09-29",
+    "Siena_latest_indexed_election_release": "2026-10-04"
+  },
+  "incomplete_release_packets": [
+    {
+      "packet_id": "nyt-siena-october3-4-2026-five-state-headlines",
+      "pollster": "The New York Times / Siena",
+      "verification_status": "publisher_headlines_verified_methodology_unavailable",
+      "release_publications": [
+        {
+          "published_on": "2026-10-03",
+          "office": "U.S. Senate",
+          "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/"
+        },
+        {
+          "published_on": "2026-10-04",
+          "office": "Governor",
+          "source": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/"
+        }
+      ],
+      "linked_combined_toplines": "https://www.nytimes.com/interactive/2026/10/03/polls/times-siena-poll-toplines.html",
+      "deduplication_note": "Both releases link to this identical combined toplines URL. Keep the office releases in one source packet. State sample identities remain unverified.",
+      "missing_fields": [
+        "field_start",
+        "field_end",
+        "state_sample_sizes",
+        "reported_uncertainty",
+        "additional_response_categories",
+        "full_question_wording"
+      ],
+      "access_blocker": {
+        "type": "robots.txt",
+        "domains": [
+          "nytimes.com",
+          "static01.nyt.com"
+        ],
+        "retrieval_method": "primary-source web retrieval",
+        "is_full_task_blocker": false
+      },
+      "state_observations": [
+        {
+          "state": "Alaska",
+          "survey_id": null,
+          "population": "likely voters",
+          "field_start": null,
+          "field_end": null,
+          "sample_size": null,
+          "reported_uncertainty": null,
+          "races": [
+            {
+              "race_label": "Alaska U.S. Senate",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Mary Peltola",
+                  "party": "Democratic",
+                  "support": 50
+                },
+                {
+                  "name": "Dan Sullivan",
+                  "party": "Republican",
+                  "support": 43
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-03",
+              "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/",
+              "ballot_round": null,
+              "third_party_support_percent": null
+            },
+            {
+              "race_label": "Alaska Governor",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Jonathan Kreiss-Tomkins",
+                  "party": "Democratic",
+                  "support": 40
+                },
+                {
+                  "name": "Bernadette Wilson",
+                  "party": "Republican",
+                  "support": 20
+                },
+                {
+                  "name": "Dave Bronson",
+                  "party": "Republican",
+                  "support": 15
+                },
+                {
+                  "name": "Treg Taylor",
+                  "party": "Republican",
+                  "support": 11
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-04",
+              "source": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+              "ballot_round": null,
+              "third_party_support_percent": null,
+              "election_method": "Ranked-choice voting",
+              "round_interpretation_note": "The summary does not identify which round or exact question these figures represent. No transfer or final-winner inference is made."
+            }
+          ]
+        },
+        {
+          "state": "Iowa",
+          "survey_id": null,
+          "population": "likely voters",
+          "field_start": null,
+          "field_end": null,
+          "sample_size": null,
+          "reported_uncertainty": null,
+          "races": [
+            {
+              "race_label": "Iowa U.S. Senate",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Josh Turek",
+                  "party": "Democratic",
+                  "support": 47
+                },
+                {
+                  "name": "Ashley Hinson",
+                  "party": "Republican",
+                  "support": 48
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-03",
+              "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/",
+              "ballot_round": null,
+              "third_party_support_percent": null
+            },
+            {
+              "race_label": "Iowa Governor",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Rob Sand",
+                  "party": "Democratic",
+                  "support": 52
+                },
+                {
+                  "name": "Zach Lahn",
+                  "party": "Republican",
+                  "support": 41
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-04",
+              "source": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+              "ballot_round": null,
+              "third_party_support_percent": null
+            }
+          ]
+        },
+        {
+          "state": "Kansas",
+          "survey_id": null,
+          "population": "likely voters",
+          "field_start": null,
+          "field_end": null,
+          "sample_size": null,
+          "reported_uncertainty": null,
+          "races": [
+            {
+              "race_label": "Kansas U.S. Senate",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Adam Hamilton",
+                  "party": "Democratic",
+                  "support": 45
+                },
+                {
+                  "name": "Roger Marshall",
+                  "party": "Republican",
+                  "support": 45
+                },
+                {
+                  "name": "David Graham",
+                  "party": "Libertarian",
+                  "support": 3
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-03",
+              "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/",
+              "ballot_round": null,
+              "third_party_support_percent": {
+                "David Graham": 3
+              },
+              "publisher_name_spelling": {
+                "Adam Hamilton": "Adam Hamiliton"
+              }
+            },
+            {
+              "race_label": "Kansas Governor",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Cindy Holscher",
+                  "party": "Democratic",
+                  "support": 44
+                },
+                {
+                  "name": "Ty Masterson",
+                  "party": "Republican",
+                  "support": 49
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-04",
+              "source": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+              "ballot_round": null,
+              "third_party_support_percent": null
+            }
+          ]
+        },
+        {
+          "state": "Ohio",
+          "survey_id": null,
+          "population": "likely voters",
+          "field_start": null,
+          "field_end": null,
+          "sample_size": null,
+          "reported_uncertainty": null,
+          "races": [
+            {
+              "race_label": "Ohio U.S. Senate",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Sherrod Brown",
+                  "party": "Democratic",
+                  "support": 49
+                },
+                {
+                  "name": "Jon Husted",
+                  "party": "Republican",
+                  "support": 46
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-03",
+              "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/",
+              "ballot_round": null,
+              "third_party_support_percent": null
+            },
+            {
+              "race_label": "Ohio Governor",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Amy Acton",
+                  "party": "Democratic",
+                  "support": 49
+                },
+                {
+                  "name": "Vivek Ramaswamy",
+                  "party": "Republican",
+                  "support": 45
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-04",
+              "source": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+              "ballot_round": null,
+              "third_party_support_percent": null
+            }
+          ]
+        },
+        {
+          "state": "Texas",
+          "survey_id": null,
+          "population": "likely voters",
+          "field_start": null,
+          "field_end": null,
+          "sample_size": null,
+          "reported_uncertainty": null,
+          "races": [
+            {
+              "race_label": "Texas U.S. Senate",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "James Talarico",
+                  "party": "Democratic",
+                  "support": 51
+                },
+                {
+                  "name": "Ken Paxton",
+                  "party": "Republican",
+                  "support": 45
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-03",
+              "source": "https://sri.siena.edu/2026/10/03/nytimes-siena-poll-of-likely-voters-senate-races/",
+              "ballot_round": null,
+              "third_party_support_percent": null
+            },
+            {
+              "race_label": "Texas Governor",
+              "observation_type": "publisher_summary_candidate_support",
+              "candidate_support_percent": [
+                {
+                  "name": "Gina Hinojosa",
+                  "party": "Democratic",
+                  "support": 49
+                },
+                {
+                  "name": "Greg Abbott",
+                  "party": "Republican",
+                  "support": 46
+                }
+              ],
+              "additional_response_percent": null,
+              "margin_standard_error_percentage_points": null,
+              "election_win_probability": null,
+              "contract_mapping_reviewed": false,
+              "published_on": "2026-10-04",
+              "source": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+              "ballot_round": null,
+              "third_party_support_percent": null
+            }
+          ]
+        }
+      ],
+      "change_classification": "previously_missing_october_headlines_with_concrete_metadata_blocker",
+      "last_verified_utc": "2026-10-07T02:44:41Z"
+    }
+  ],
+  "review_history": [
+    {
+      "reviewed_utc": "2026-10-07T02:32:52.362351+00:00",
+      "changes": [
+        {
+          "change": "Added Michigan, Ohio, Kansas and two national September surveys previously absent from the saved baseline.",
+          "new_to_project": true,
+          "newly_published_this_review": false
+        },
+        {
+          "change": "Verified NY-17 publication date October 1 and preserved full-results precision alongside the existing rounded headline.",
+          "survey_id": "emerson-pix11-ny17-september-2026",
+          "vote_shift": false
+        },
+        {
+          "change": "Completed other-party, undecided/refused and non-response categories for the existing Maine and Texas survey groups.",
+          "vote_shift": false
+        },
+        {
+          "change": "Verified Maine federal ranked-choice and governor plurality settlement-relevant methods, plus official absentee-voting development."
+        }
+      ]
+    },
+    {
+      "reviewed_utc": "2026-10-07T02:44:41Z",
+      "changes": [
+        {
+          "change_id": "suffolk-usatoday-ohio-october-2026",
+          "change": "Added the October 2 Suffolk Ohio statewide release, including full-table precision, Libertarian/no-party candidates, write-ins, undecided and refused responses.",
+          "new_to_project": true,
+          "newly_published_this_review": false
+        },
+        {
+          "change_id": "marquette-wisconsin-september30-2026",
+          "change": "Added the September 30 Marquette Wisconsin release. Likely-voter and registered-voter estimates are preserved as dependent results of the same survey.",
+          "new_to_project": true,
+          "newly_published_this_review": false
+        },
+        {
+          "change_id": "quinnipiac-national-september29-2026",
+          "change": "Added Quinnipiac's September 29 House-control preference question and identified its wording as different from a generic candidate vote-intention ballot.",
+          "new_to_project": true,
+          "newly_published_this_review": false
+        },
+        {
+          "change_id": "nyt-siena-october3-4-2026-five-state-headlines",
+          "change": "Added verified October 3 Senate and October 4 governor headlines for Alaska, Iowa, Kansas, Ohio and Texas in one pending source packet. Full-table access is blocked; methodology and unreported responses remain null.",
+          "new_to_project": true,
+          "newly_published_this_review": false
+        },
+        {
+          "change_id": "ohio-early-and-absentee-launch-october6-2026",
+          "change": "Added the Ohio Secretary of State's October 5 announcement of the October 6 early/absentee-voting launch.",
+          "new_to_project": true
+        },
+        {
+          "change_id": "alaska-2026-ranked-choice-tabulation-and-certification-calendar",
+          "change": "Verified Alaska's November 18 planned ranked-choice tabulation and November 25 target certification, after the tournament trading deadline.",
+          "new_to_project": true
+        }
+      ]
+    }
+  ],
+  "trading_deadline_utc": "2026-11-04T17:00:00Z"
+}
