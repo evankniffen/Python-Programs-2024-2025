@@ -25,6 +25,8 @@ services:
         sync: false
       - key: SIG_EXPECTED_PROFILE_ID
         sync: false
+      - key: SIG_STATE_BOOTSTRAP_B64
+        sync: false
       - key: SIG_LIVE
         value: "false"
       - key: SIG_STATE_DIR

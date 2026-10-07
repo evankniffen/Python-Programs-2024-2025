@@ -6,6 +6,7 @@ import uuid
 
 from .api import API
 from .autonomous import run_worker, verify_state_disk
+from .bootstrap import restore_state
 from .runtime import read_json
 
 
@@ -26,6 +27,9 @@ def load_cloud_config():
 
 def main():
     config, work, live = load_cloud_config()
+    restored = restore_state(os.environ.get("SIG_STATE_BOOTSTRAP_B64", ""), work,
+                             config["expected_profile_id"])
+    print(restored, flush=True)
     return run_worker(API(config["api_base"]), config, work, live=live)
 
 

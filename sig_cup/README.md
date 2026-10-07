@@ -19,8 +19,12 @@ to Render's October 2026 pricing. Set the existing participant credential as
 `SIG_API_KEY` and the intended account UUID as `SIG_EXPECTED_PROFILE_ID` using
 Render's secret environment variables. Neither belongs in this repository.
 
-The service starts with `SIG_LIVE=false`. Verify successful authenticated scans
-and migrate the private order journals to `/var/data/sig-cup` before activation.
+The service starts with `SIG_LIVE=false`. Set `SIG_STATE_BOOTSTRAP_B64` to the
+base64-encoded private state backup at first startup. The importer validates the
+participant identity and database integrity, atomically installs the three order
+journal databases, and never overwrites existing cloud journals on restart. The
+snapshot and its contents must never be committed. Verify successful authenticated
+scans before activation.
 Only one live process should operate the participant account. A confirmed live
 activation uses `SIG_LIVE=true`; each basket is capped at 1,000 virtual SUSQies,
 each race at 12,000, daily entry spending at 30,000, and total unsettled cost at
